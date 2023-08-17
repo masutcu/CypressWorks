@@ -17,9 +17,6 @@ describe("Ürün ara, fiyata göre sırala ve Sepete ekle", function() {
         cy.contains('About').should('be.visible')
         cy.wait(2000)
 
-        
-
-
     });
     
     
@@ -37,7 +34,7 @@ it('Filtrele kısmı seçeneklerinin çalıştığını doğrula',()=>{
     //Her bir silalama seçeneği için kontrol et ve görünürlüğünü doğrula
     
         cy.get('#sortby > .wt-menu__trigger').click()
-        cy.wait(2000)
+        cy.wait(3000)
          //sıralama seçeneklerini tanımla
         const siralamaSecenekleri=['Relevancy','Lowest Price','Highest Price','Top Customer Reviews','Most Recent']
     
@@ -49,32 +46,14 @@ it('Filtrele kısmı seçeneklerinin çalıştığını doğrula',()=>{
         cy.log('"${secenek}" siralama seçeneği görülür.');
 
     });
-
-
-
     });
 
-
-    
 });
+it('sepet alanına gir',()=>{
 
+    cy.scrollTo("top");
+    cy.get(':nth-child(3) > .wt-tooltip').click()
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+});
 
 });
