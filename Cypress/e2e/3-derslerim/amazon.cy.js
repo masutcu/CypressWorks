@@ -84,6 +84,7 @@ it ('Arama kutusunu bul ve ürün adını gir ',()=>{
 
 it ('Arama sonuclarini dogrula ',()=>{
     const urunAdi="alcatel 2019G";
+     cy.wait(2000)
      
      //locate alınırken id ile alınıyorsa # ile başla, değilse . ile başlanır.
     // cy.get('.s-no-outline > .a-size-medium-plus').should('include','Sonuçlar');
@@ -91,6 +92,13 @@ it ('Arama sonuclarini dogrula ',()=>{
     
  });
 
+        it ('Günün fırsatları başlığı tıkla',()=>{
+
+        cy.get('[href="/deals?ref_=nav_cs_gb"]').click
+
+
+
+ });
 
 
 

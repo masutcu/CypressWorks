@@ -18,8 +18,7 @@ describe("Ürün ara, fiyata göre sırala ve Sepete ekle", function() {
         cy.wait(2000)
 
     });
-    
-    
+
 
 it('Ürün ara',()=>{
 
