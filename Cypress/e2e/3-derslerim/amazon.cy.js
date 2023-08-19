@@ -92,13 +92,6 @@ it ('Arama sonuclarini dogrula ',()=>{
     
  });
 
-        it ('Günün fırsatları başlığı tıkla',()=>{
-
-        cy.get('[href="/deals?ref_=nav_cs_gb"]').click
-
-
-
- });
 
 
 

@@ -1,1 +1,6 @@
-npx cypress open
+npx cypress open //bu kod dashboard açmak için
+
+xpath için;
+npm install cypress-xpath --save-dev  
+support altında e2e.js içerisine kod satırında import altına
+import 'cypress-xpath'; //eklenecek
