@@ -17,7 +17,6 @@ afterEach(()=>{
 */
 it('Anasayfaya gidilir',()=>{
     cy.visit("https://www.cimri.com.tr");
-    
 
 });
 

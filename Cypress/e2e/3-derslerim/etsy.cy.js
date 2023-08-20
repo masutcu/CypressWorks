@@ -6,7 +6,6 @@ describe("Ürün ara, fiyata göre sırala ve Sepete ekle", function() {
        
        // cy.contains("Accepter").click()
        cy.url().should('include','https://www.etsy.com/');
-        
 
     });
 
@@ -15,13 +14,12 @@ describe("Ürün ara, fiyata göre sırala ve Sepete ekle", function() {
         cy.get(':nth-child(3) > .wt-hide-xs').should('contain','About');
         
         cy.contains('About').should('be.visible')
-        cy.wait(2000)
+        cy.wait(1000)
 
     });
 
 
 it('Ürün ara',()=>{
-
     cy.scrollTo("top");
     cy.get('#global-enhancements-search-query').type('bracelet{enter}')
     
