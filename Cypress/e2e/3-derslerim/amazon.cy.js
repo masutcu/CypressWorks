@@ -1,3 +1,4 @@
+//npx cypress open //bu kod dashboard açmak için
 describe("Amazon sayfasina giris",()=>{
 it("Tarayiciyi baslat ve Amazon Sayfasini Ac",()=>{
     //tarayıcıyı başlatır ve amazon sayfasına gider / tek slaşile BaseUrl e gidiyor
@@ -56,9 +57,6 @@ it('Bir hesap oluşturun',()=>{
     cy.get('[for="ap_email"]').should("be.visible"," Cep telefonu numarası veya e-posta ");
 });
 
-
-
-
 })
 
 describe.only("Amazonda ürün arama",()=>{
@@ -88,8 +86,7 @@ it ('Arama sonuclarini dogrula ',()=>{
      
      //locate alınırken id ile alınıyorsa # ile başla, değilse . ile başlanır.
     // cy.get('.s-no-outline > .a-size-medium-plus').should('include','Sonuçlar');
-     
-    
+
  });
 
 
