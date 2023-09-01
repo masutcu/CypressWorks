@@ -3,13 +3,9 @@ describe("Cimri Site Testi",()=>{
 beforeEach(()=>{
     //her test öncesinde hepsi burada sitesine gidecek
     cy.visit("https://www.cimri.com.tr")
-
 });
 
-*/
 
-
-/*
 afterEach(()=>{
     //her test sonrasında çalışacak sayfayı yenileyecek
     cy.reload();
@@ -41,11 +37,5 @@ it('Arama yapalım ve dogrulayalım',()=>{
     cy.contains('reg zephyrus').click({force:true});
     
     });
-
-
-
-
-
-
 
 })
