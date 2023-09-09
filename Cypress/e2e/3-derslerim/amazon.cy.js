@@ -3,7 +3,7 @@ describe("Amazon sayfasina giris",()=>{
 it("Tarayiciyi baslat ve Amazon Sayfasini Ac",()=>{
     //tarayıcıyı başlatır ve amazon sayfasına gider / tek slaşile BaseUrl e gidiyor
     cy.visit("/")
-    cy.wait(2000)
+    cy.wait(1000)
     
 });
 
@@ -82,7 +82,7 @@ it ('Arama kutusunu bul ve ürün adını gir ',()=>{
 
 it ('Arama sonuclarini dogrula ',()=>{
     const urunAdi="alcatel 2019G";
-     cy.wait(2000)
+     cy.wait(1000)
      
      //locate alınırken id ile alınıyorsa # ile başla, değilse . ile başlanır.
     // cy.get('.s-no-outline > .a-size-medium-plus').should('include','Sonuçlar');
