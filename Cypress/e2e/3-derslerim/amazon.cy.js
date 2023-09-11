@@ -85,7 +85,7 @@ it ('Arama sonuclarini dogrula ',()=>{
      cy.wait(1000)
      
      //locate alınırken id ile alınıyorsa # ile başla, değilse . ile başlanır.
-    // cy.get('.s-no-outline > .a-size-medium-plus').should('include','Sonuçlar');
+     cy.get('.s-no-outline > .a-size-medium-plus').should('include','Sonuçlar');
 
  });
 
