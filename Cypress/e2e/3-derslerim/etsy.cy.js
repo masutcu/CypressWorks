@@ -3,7 +3,6 @@ describe("Ürün ara, fiyata göre sırala ve Sepete ekle", function() {
     before(()=>{
         //Etsy web sitesine gidilir
         cy.visit("https://etsy.com");
-       
        // cy.contains("Accepter").click()
        cy.url().should('include','https://www.etsy.com/');
 
@@ -31,7 +30,7 @@ it('Filtrele kısmı seçeneklerinin çalıştığını doğrula',()=>{
     //Her bir silalama seçeneği için kontrol et ve görünürlüğünü doğrula
     
         cy.get('#sortby > .wt-menu__trigger').click()
-        cy.wait(3000)
+        cy.wait(2000)
          //sıralama seçeneklerini tanımla
         const siralamaSecenekleri=['Relevancy','Lowest Price','Highest Price','Top Customer Reviews','Most Recent']
     

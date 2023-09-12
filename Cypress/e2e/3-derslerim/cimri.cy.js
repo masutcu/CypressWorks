@@ -35,7 +35,8 @@ it('Arama yapalım ve dogrulayalım',()=>{
 
     cy.wait(2000);
     cy.contains('reg zephyrus').click({force:true});
-    
+
+
     });
 
 })
